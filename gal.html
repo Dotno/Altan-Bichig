@@ -1,0 +1,1261 @@
+<html>"   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="https://kit.fontawesome.com/a71707a89a.js" crossorigin="anonymous"></script><title>gal</title>
+      <style type="text/css">
+                    * /*{
+                    background-color: rgb(32,61,81);
+                    color: rgb(246,243,232);
+                    }
+                    #FN { 
+                    background-color: rgb(43,98,106);
+                    }*/
+                    /* This creates the counter  */
+                    body {
+                        counter-reset: cb_counter_var;
+                    }
+                    
+                    /* This increments the counter value and defines 
+                    the displayed content  */
+                    sup::after {
+                        counter-increment: cb_counter_var;
+                        content: counter(cb_counter_var)
+                    }
+                    
+                    /* This initially hides the footnote (i.e. span)  */
+                    input[type = checkbox] ~ span {
+                        display: none
+                    }
+                    
+                    /* This styles the footnote text which appears 
+                    when the label is clicked  */
+                    input[type = checkbox]:checked ~ span {
+                        display: inline;
+                        font-size: 85%;
+                        font-family: Monaco,Consolas,"Lucida Console",$monospace;
+                        color: mix(#000, $text-color, 30%);
+                        cursor: default;
+                    }
+                    
+                    /* This permanently hides the checkbox  */
+                    input[type = checkbox] {
+                        display: none;
+                    }
+                    
+                    /* This styles the footnote label to appear 
+                    like a hyperlink  */
+                    input[type = checkbox] ~ label {
+                        display: inline;
+                        cursor: pointer;
+                        color: $link-color;
+                        text-decoration: underline;
+                    }
+                    
+                    /* This styles the footnote label when the mouse 
+                    hover over it */
+                    input[type = checkbox] ~ label:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                        color: red;
+                    }
+                    
+                    /* This styles the footnote label after it is clicked */
+                    input[type = checkbox]:checked ~ label {
+                        color: red;
+                        text-decoration: none;
+                    }
+
+                
+                </style>
+   </head>
+   
+   
+   
+   
+   <h1>Eke Toḡorolčin a- erkin / Iši Qatun-u Ġal-un
+      Öčig / Altan Ordo-yin Ġolumtan-u Öčig</h1>
+   
+   <h1>Hearth/Fire Prayer (to the First Lady / Mother
+      Toḡorolčin / the Golden Tent)</h1>
+   
+   <p> By: </p>
+   
+   <p>
+      Encoded by
+      Pount, Dashdorjiin Dotno
+      </p>
+   
+   
+   Diplomatic edition of Öčig as an experiment with XML and TEI
+   
+   
+   <p>
+      <tei:front xmlns:tei="http://www.tei-c.org/ns/1.0">
+         <h2>Sigla</h2>
+         <p>
+            <am rend="bold">T</am>
+         </p>
+         <p>Ulaanbaatar manuscript - 'Eke Toḡorolčin a-
+            erkin sačuqu,' Yang, Haiying. 
+            Suita-shi: Kokuritsu Minzokugaku Hakubutsukan, 1998. 170-173</p>
+         <p>
+            <am rend="bold">R*</am>
+         </p>
+         <p> Likely a  of
+            UB. This is B. Rintchen's transcription of an apparently dissatisfactory
+            copy of Zhamcarano's manuscript from his trip in 1909-10, which is most
+            likely UB. I will delete these lemmas later when I ascertain which
+            manuscript it is from exactly. These are items xxxii-xxxxii, on pp. 66-93 in
+             Asiatische Forschungen 3. Wiesbaden: Otto
+            Harrassowitz, 1959. A segment parallel to the lines visible before the Tügel
+            facsimile published by Chiodo is found at the beginning of '' on pp 76-83. In
+            other words, R* is clearly based on a copy of Z, which is the T. Z was
+            subsequently made available to scholars by the Oriental Institute in St.
+            Petersburg.</p>
+         <p>
+            <am rend="bold">O</am>
+         </p>
+         <p>The Oġonos Manuscript - Ġal-un Öčig.</p>
+         <p>O
+            <emph rend="subscript">1</emph> : The Oġonos Manuscript - Ġal-un Öčig.
+            [29-4] to [29-10/11] This title is likely only a fragment, as only
+            four stanzas are included. Yang, Haiying. “Kinsho” kenkyū e no
+            josetsu. Suita-shi: Kokuritsu Minzokugaku Hakubutsukan, 1998. Pp.
+            182. </p>
+         <p>O
+            <emph rend="subscript">2</emph> : The Oġonos Manuscript - Iśi Qatun
+            Eǰin-ü Ġal-un Öčig. [29-11] to the colophon on [31-3] Yang, Haiying.
+            “Kinsho” kenkyū e no josetsu. Suita-shi: Kokuritsu Minzokugaku
+            Hakubutsukan, 1998. Pp. 182-184. </p>
+         <p>
+            <am rend="bold">A</am>
+         </p>
+         <p>Darkhad 1 Manuscript. First of three private
+            manuscripts donated by anonymous members of the Darkhad community in Eǰen
+            Qoro'a that the editors of the Erdenisümbür et. al., chose for inclusion in
+            their facsimile volume. The first part of the manuscript is entirely
+            dedicated to the overall structure of each seasonal and other special
+            occasion rituals, simply listing the rituals and texts to be recited for
+            each date. The  part is again the at the beginning of the
+            parts with prayer texts. Erdenisümbmür Kereyid, Narasun Sa. Čoġtu Oġonos,
+            eds.,  Vol. III, 2010.
+            pp. 975-1040. This piece, whose beginning is marked  is on Pp. 997-1001.</p>
+         <p>
+            <am rend="bold">L</am>
+         </p>
+         <p>
+            </p>
+         <p>L
+            <emph rend="subscript">1</emph> : This occurs at the beginning of the
+            whole manuscript. Eldengdei Manuscript. Eldengdei (1908-1981) was a
+            member of the local Darqad community in Ordos, and he donated a
+            photocopy of his private copy of the <i>Altan Bičig</i> to the
+            shrine office in Eǰen Qoro'a. The facsimile of the photocopy of the
+            entire manuscript is included in Erdenisümbmür Kereyid, Narasun Sa.
+            Čoġtu Oġonos, eds., <i>Činggis Qaġan-u Altan Bičig:
+               emkidkel.</i> Vol. III, 2010. Pp. 747-848. This witness is on
+            749-750.</p>
+         <p>L
+            <emph rend="subscript">2</emph> : This occurs in the middle, pp. 50-51
+            (796-797), and is a stand alone prayer. Eldengdei Manuscript.
+            Eldengdei (1908-1981) was a member of the local Darqad community in
+            Ordos, and he donated a photocopy of his private copy of the
+            <i>Altan Bičig</i> to the shrine office in Eǰen Qoro'a.
+            The facsimile of the photocopy of the entire manuscript is included
+            in Erdenisümbmür Kereyid, Narasun Sa. Čoġtu Oġonos, eds.,
+            <i>Činggis Qaġan-u Altan Bičig: emkidkel.</i> Vol. III,
+            2010. Pp. 747-848. This witness is on 751-753 (up to line
+            7).</p>
+         <p>L
+            <emph rend="subscript">3</emph> :  The first of the two fire prayers in the middle of
+            L. On pages 50-51 (pp. 796-797)</p>
+         <p>L
+            <emph rend="subscript">4</emph> :  The second of the two fire prayers in the middle
+            of L. On pages 50-51 (p. 798)</p>
+         <p>
+            <am rend="bold">G</am>
+         </p>
+         <p>Edükeśig Manuscript. Edükeśig (b. 1926) was a
+            pioneering scholars of the Inner Mongolian Autonomous Region, and worked for
+            the " since 1957. He
+            went to Eǰen Qoro-a in 1962 and hand copied the 
+            kept at the newly established 
+            mausoleum. The hand copied material was kept at the  until after the Cultural
+            Revolution, when the employees/members of the now desecrated made a photocopy. This photocopy is reprinted in
+            Erdenisümbmür Kereyid, Narasun Sa. Čoġtu Oġonos, eds., . Vol. III, 2010. Pp. 851-948. This piece
+            "Öčig" is on pp. 867-872</p>
+         <p>
+            <am rend="bold">Z</am>
+         </p>
+         <p>Fragment of Zhamcarano's manuscript facsimile
+            in Chiodo's article on the nine paladins </p>
+         <p>
+            <am rend="bold">S</am>
+         </p>
+         <p>Sayinǰirġal and Šaraldai edition, in AOT, p.
+            36-38. Note on p. 38 says this was copied from the Altan Bičig. Clearly, the
+            source of this edition is closely related to L3... Perhaps sharing the same
+            source, if not a  of the latter...</p>
+      </tei:front>
+   </p>
+   
+   
+   
+   
+   
+   
+   <body>
+      
+      Notes:
+      The witnesses can be separated into two groups: 
+      
+      1) T, O, and A, and of these O and A are closely related
+      2) L, G, and Z, and of these L and G are closely related. These are all direct copies
+      of the Altan Bičig kept at the shrine in Ejen Qoroa before the desecration. However,
+      G is clearly a more haphazard version that chose the lengthiest version of the three
+      hearth prayers as representative of the whole. L is a neat and careful copy, but
+      likely made emendations without marking them, as did Z. Z is Zhamcarano's manuscript
+      copy as printed in Chiodo (1994)
+      
+      In the lengthiest direct copy of the Altan Bičig in Eǰen Qoro-a, L, this prayer is
+      specified as the hearth prayer for Činggis Qan, and appear in various forms in four
+      places. partially included at the beginning of the Yeke Öčig. The entire text is
+      also repeated later in the Altan Bičig as a stand-alone prayer. 
+      
+      In T, this fire/hearth prayer is combined with the first-fruits of kumiss aspersion
+      prayers, which is treated separately.
+      
+      In O, the beginning of this prayer is sandwiched between two other titles related
+      to
+      the First Lady (Iśi Qatun): 1) Iśi Qatun Öčig, and 2) Iśi Qatun Eǰin-ü Ġal-un Öčig.
+      In A, the prayer has its own title simply as "Ġal-un Takilġ-a". 
+      
+      
+      
+      Eke Toḡorolčin (Iśi Qatun) a- erkin sačuqu (Ġal-un Takilġ-a)
+      
+      
+      <div><br>§ 1
+         
+         
+         
+         <br>Deger-e Sümber <a>aġula-yin<input type="checkbox" id="fref1"><label for="fref1"><sup></sup></label><span id="FN"><br><br>aġula-yin ] <i>T L1</i>;
+               aḡula-yin <i>L2</i>, aġula-'in <i>O</i>, aġulan-'in <i>A</i>; <br><br></span></a>
+         <a>dobbu<input type="checkbox" id="fref2"><label for="fref2"><sup></sup></label><span id="FN"><br><br>dobbu ] <i>T</i>;
+               dobun <i>O A L1 L2</i>; <br><br></span></a> büküi-eče.
+         <br><a>Tenggis<input type="checkbox" id="fref3"><label for="fref3"><sup></sup></label><span id="FN"><br><br>tenggis ] <i>A L1 L2</i>;
+               Tegśi  <i>O</i>, Sün <i>T</i>; <br><br></span></a>
+         
+         <a>dalai-yin<input type="checkbox" id="fref4"><label for="fref4"><sup></sup></label><span id="FN"><br><br>dalai-yin ] <i>T L1 L2</i>;
+               dalai-'in <i>O A</i>; <br><br></span></a>
+         <a>šalčaġ-un<input type="checkbox" id="fref5"><label for="fref5"><sup></sup></label><span id="FN"><br><br>šalčaġ-un ] <i>O</i>;
+               čalčiqun <i>T</i>, salčiġud <i>A L2</i>, šalčiġ-ud <i>L1</i>; <br><br></span></a>
+          čaġ büküi-eče.
+         <br>
+         <a><input type="checkbox" id="fref6"><label for="fref6"><sup></sup></label><span id="FN"><br><br>büküi-eče. ] <i>O A L1 L2</i>; Tenggley̌en qad noy̌ad-un kü̱ üken büküi-eče. <i>T</i>; <br><br></span></a>
+         
+         <br>
+         
+         <a>Delekei<input type="checkbox" id="fref7"><label for="fref7"><sup></sup></label><span id="FN"><br><br>delekei ] <i>T L1</i>;
+               Deleki <i>O A</i>, Delki <i>L2</i>; <br><br></span></a>
+         
+         <a>yirtinčü-yin<input type="checkbox" id="fref8"><label for="fref8"><sup></sup></label><span id="FN"><br><br>yirtinčü-yin ] <i>T</i>;
+               y̌ertemčü-yi <i>O</i>, y̌ert'čü-yi <i>A</i>, yirtinčü-yi <i>L1</i>, 'ertinčü-yi <i>L2</i>; <br><br></span></a>
+         <a>egüdküi<input type="checkbox" id="fref9"><label for="fref9"><sup></sup></label><span id="FN"><br><br>egüdküi ] <i>O A L1 L2</i>;
+               yegüdkü <i>T</i>; <br><br></span></a>
+         <a>tere<input type="checkbox" id="fref10"><label for="fref10"><sup></sup></label><span id="FN"><br><br>tere ] <i>O T L1 L2</i>;
+               terin <i>A</i>; <br><br></span></a>
+         <a>čaġ-ača<input type="checkbox" id="fref11"><label for="fref11"><sup></sup></label><span id="FN"><br><br>čaġ-ača ] <i>T O</i>;
+               čaġ-tur <i>L1 L2</i>, čaġ-tu'r <i>A</i>; <br><br></span></a>
+         
+         
+         <br>
+         
+         <a>Delgerenggüi<input type="checkbox" id="fref12"><label for="fref12"><sup></sup></label><span id="FN"><br><br>delgerenggüi ] <i>T L1</i>;
+               Delgeringgüi <i>A L2</i>, Delgeriküi  <i>O</i>; <br><br></span></a>
+         <a>egüdügsen<input type="checkbox" id="fref13"><label for="fref13"><sup></sup></label><span id="FN"><br><br>egüdügsen ] <i>T</i>;
+               <i>om.</i> <i>O A L1 L2</i>; <br><br></span></a>
+         
+         </div>
+      
+      <div><br>§ 2
+         <br>
+         <a><span id="inlineRdg">{ Šergerem-e  <i>O A</i>, Šergermen <i>L1 L2</i>, Śirakiyam-a <i>T</i>;  }</span></a>
+         
+         <a>bolod<input type="checkbox" id="fref14"><label for="fref14"><sup></sup></label><span id="FN"><br><br>bolod ] <i>O A L1 L2</i>;
+               bolad <i>T</i>; <br><br></span></a>
+         <a>temür<input type="checkbox" id="fref15"><label for="fref15"><sup></sup></label><span id="FN"><br><br>temür ] <i>O A L1 L2</i>;
+               <i>om.</i> <i>T</i>; <br><br></span></a>
+         <a>ečige-tü<input type="checkbox" id="fref16"><label for="fref16"><sup></sup></label><span id="FN"><br><br>ečige-tü ] <i>T L1</i>;
+               eči’getü <i>O</i>, ečigetü <i>A L2</i>; <br><br></span></a>
+         
+         <br>
+         <a>Šara qayir<input type="checkbox" id="fref17"><label for="fref17"><sup></sup></label><span id="FN"><br><br>šara qayir ] <i>O L2</i>;
+               Šara qa'ir <i>A</i>, Šar-a qayir <i>L1</i>, Čun <i>T</i>; <br><br></span></a> čilaġun <a>eke-tü<input type="checkbox" id="fref18"><label for="fref18"><sup></sup></label><span id="FN"><br><br>eke-tü ] <i>T L1</i>;
+               eketü <i>O A L2</i>; <br><br></span></a>
+         <br>
+         <a>Šarilǰiken <input type="checkbox" id="fref19"><label for="fref19"><sup></sup></label><span id="FN"><br><br>Yang has šarilǰiginan
+               for O<br><br></span><input type="checkbox" id="fref20"><label for="fref20"><sup></sup></label><span id="FN"><br><br>šarilǰiken ] <i>O L2</i>;
+               Śirlaġanan <i>T</i>, Śiralǰin <i>L1</i>, Šaralǰiken <i>A</i>; <br><br></span></a> Čaġan <a>ebesün<input type="checkbox" id="fref21"><label for="fref21"><sup></sup></label><span id="FN"><br><br>ebesün ] <i>A L1 L2</i>;
+               ebsün <i>O</i>, öbesün <i>T</i>; <br><br></span></a> amitu 
+         <br>
+         <a>Śira<input type="checkbox" id="fref22"><label for="fref22"><sup></sup></label><span id="FN"><br><br>śira ] <i>T</i>;
+               Šir-a <i>L1</i>, Šar-a <i>O</i>, Šara <i>A L2</i>; <br><br></span></a>
+         <a>terigüü-tü<input type="checkbox" id="fref23"><label for="fref23"><sup></sup></label><span id="FN"><br><br>terigüü-tü ] <i>T L1</i>;
+               terigüütü <i>A L2</i>, tergütü <i>O</i>; <br><br></span></a> čaġan <a>qonin<input type="checkbox" id="fref24"><label for="fref24"><sup></sup></label><span id="FN"><br><br>qonin ] <i>T A L1 L2</i>;
+               qoṉin <i>O</i>; <br><br></span></a>
+         <a>takilġa-tu<input type="checkbox" id="fref25"><label for="fref25"><sup></sup></label><span id="FN"><br><br>takilġa-tu ] <i>A L1 L2</i>;
+               takilġatu <i>T O</i>; <br><br></span></a>
+         </div>
+      
+      <div><br>§ 3
+         
+         <div><br>§ 3i
+            <br>
+            <a><input type="checkbox" id="fref26"><label for="fref26"><sup></sup></label><span id="FN"><br><br>takilġa-tu ] <i>T A L1</i>; Boġda-’in beri Iši Qatun  <i>O</i>; <br><br></span></a>
+            
+            <br>
+            <a>Boġda-yin<input type="checkbox" id="fref27"><label for="fref27"><sup></sup></label><span id="FN"><br><br>boġda-yin ] <i>L1 L2</i>;
+                  Boġda-'in <i>A</i>, Eǰin-ü̱ <i>O</i>, <i>om.</i> <i>T</i>; <br><br></span></a>
+            <a>Örgen<input type="checkbox" id="fref28"><label for="fref28"><sup></sup></label><span id="FN"><br><br>örgen ] <i>T A L1 L2</i>;
+                  ö̱rgen  <i>O</i>; <br><br></span></a>
+            
+            <a>ġolomtan-dur<input type="checkbox" id="fref29"><label for="fref29"><sup></sup></label><span id="FN"><br><br>ġolomtan-dur ] <i>A</i>;
+                  ḡolomtan-dur <i>L2</i>, ġolomta-dur <i>O L1</i>, ġolomtan-tu <i>T</i>; <br><br></span></a>
+            
+            <a>čiṉu<input type="checkbox" id="fref30"><label for="fref30"><sup></sup></label><span id="FN"><br><br>čiṉu ] <i>A L1 L2</i>;
+                  itügen naman čilaǰu <i>T</i>, <i>om.</i> <i>O</i>; <br><br></span></a>
+            
+            <br>
+            
+            <a>Ögeküü<input type="checkbox" id="fref31"><label for="fref31"><sup></sup></label><span id="FN"><br><br>ögeküü ] <i>A</i>;
+                  Ökö <i>T</i>, Ögöküü <i>O</i>, Ögekü <i>L1 L2</i>; <br><br></span></a>
+            <a>toso-i činu<input type="checkbox" id="fref32"><label for="fref32"><sup></sup></label><span id="FN"><br><br>toso-i činu ] <i>O A</i>;
+                  toso <i>T</i>, toson-i činu <i>L1 L2</i>; <br><br></span></a>
+            <a>talbin saġunam.<input type="checkbox" id="fref33"><label for="fref33"><sup></sup></label><span id="FN"><br><br>talbin saġunam. ] <i>T</i>;
+                  talbinam. <i>A L1 L2</i>, ergün takinam. <i>O</i>; <br><br></span></a>
+            
+            
+            </div>
+         
+         <div><br>§ 3.ii
+            <br><a>Öröśiy̌en
+               soy̌orqabasu</a>
+            <br><a>Öteletele y̌abuqu nasu</a>
+            <br><a>Egüride y̌eke ĵirġalang-un</a>
+            </div>
+         
+         <div><br>§ 3.iii
+            <br><a>Örgeǰikü<input type="checkbox" id="fref34"><label for="fref34"><sup></sup></label><span id="FN"><br><br>örgeǰikü ] <i>A L1 L2</i>;
+                  Ö̱rgö'ǰikü <i>O</i>; <br><br></span></a>
+            <a>sayin<input type="checkbox" id="fref35"><label for="fref35"><sup></sup></label><span id="FN"><br><br>sayin ] <i>L1 L2</i>;
+                  sai̱i'n <i>A O</i>; <br><br></span></a>
+            <a>törö-yin<input type="checkbox" id="fref36"><label for="fref36"><sup></sup></label><span id="FN"><br><br>törö-yin ] <i>L1 L2</i>;
+                  törö-'in <i>O A</i>; <br><br></span></a>
+            dumda
+            
+            <br><a>Qaġan Qatun<input type="checkbox" id="fref37"><label for="fref37"><sup></sup></label><span id="FN"><br><br>qaġan qatun ] <i>A L1 L2</i>;
+                  <i>om.</i> <i>O</i>, Wang Qatun Qan  Tayiǰi
+                  nar <i>T</i>; <br><br></span></a>
+            <a>Qamuġ ulus engkesün<input type="checkbox" id="fref38"><label for="fref38"><sup></sup></label><span id="FN"><br><br>qamuġ 
+                  ... 
+                  
+                  ulus engkesün ] <i>L2</i>;
+                  Qamuġ ulus engkisün <i>A</i>, Qamuġ ulus ewwe&nbsp;{...esen} <i>T</i>, Qamuġ ulus engke esen <i>L1</i>, Anin  <i>O</i>; <br><br></span></a>
+             ĵirġan <a>ĵiyaġan<input type="checkbox" id="fref39"><label for="fref39"><sup></sup></label><span id="FN"><br><br>ĵiyaġan<i> emen. </i> ] ĵiy̌aġan, 
+                  <i> sic. </i><i>T L1 L2</i>;
+                  ... 
+                  ĵiy̌aġan <i>O1</i>, ĵirġan <i>A</i>; <br><br></span></a>
+            <a>atuġai<input type="checkbox" id="fref40"><label for="fref40"><sup></sup></label><span id="FN"><br><br>atuġai ] <i>T</i>;
+                  ögtügei <i>O A L1 L2</i>; <br><br></span></a>. <input type="checkbox" id="fref41"><label for="fref41"><sup></sup></label><span id="FN"><br><br>O: In O, the title 'Ḡal-un öčög'
+               is written between lines here, separating the verses above from
+               those below.<br><br></span>
+            </div>
+         </div>
+      
+      <div><br>§ 4
+         
+         
+         
+         
+         <br><a>Deger-e</a>
+         <a>yere<input type="checkbox" id="fref42"><label for="fref42"><sup></sup></label><span id="FN"><br><br>yere<i> emen. </i> ] y̌ere, 
+               <i> sic. </i><i>O A L2</i>;
+               y̌er-e <i>T</i>, y̌erin <i>L1</i>; <br><br></span></a>
+         <a><span id="inlineRdg">{ y̌isün <i>T L1</i>, isün <i>O A L2</i>;  }</span></a>
+         <a>tngri-yin<input type="checkbox" id="fref43"><label for="fref43"><sup></sup></label><span id="FN"><br><br>tngri-yin ] <i>T L1 L2</i>;
+               tngeri-’in  <i>O A</i>; <br><br></span></a>
+         <a><a>ĵiyaġaġsan</a>
+            <input type="checkbox" id="fref44"><label for="fref44"><sup></sup></label><span id="FN"><br><br> ] <i>T L1</i>;
+               kinggi(n)egsen  <i>O</i>, ĵekegsen <i>A L2</i>; <br><br></span></a>.
+         <br>
+         <a>Yesükei eǰen čakiġsan<input type="checkbox" id="fref45"><label for="fref45"><sup></sup></label><span id="FN"><br><br>yesükei 
+               ... 
+               
+               eǰen čakiġsan<i> emen. </i> ] Yeskii, 
+               <i> sic. </i><i>T</i>;
+               <i>om.</i> <i>O A L1 L2</i>; <br><br></span></a>
+         
+         <br><a>yeke<input type="checkbox" id="fref46"><label for="fref46"><sup></sup></label><span id="FN"><br><br>yeke<i> emen. </i> ] y̌eke, 
+               <i> sic. </i><i>A L1 L2</i>;
+               <i>om.</i> <i>T O</i>; <br><br></span></a><a>Ögelen<input type="checkbox" id="fref47"><label for="fref47"><sup></sup></label><span id="FN"><br><br>ögelen ] <i>L1 L2</i>;
+               Ögilen <i>A</i>, Ögölen <i>T</i>, Iši Beri <i>O</i>; <br><br></span></a>
+         
+         <a>qatun<input type="checkbox" id="fref48"><label for="fref48"><sup></sup></label><span id="FN"><br><br>qatun ] <i>T O A L2</i>;
+               qatun-u <i>L1</i>; <br><br></span></a>
+         <a>üliyegsen<input type="checkbox" id="fref49"><label for="fref49"><sup></sup></label><span id="FN"><br><br>üliyegsen<i> emen. </i> ] üliy̌egsen, 
+               <i> sic. </i><i>T L1</i>;
+               üli̱y̌e’gsen <i>O</i>, ülǰi''san <i>A L2</i>; <br><br></span></a>.
+         <br><a>Yirtinčü-yin<input type="checkbox" id="fref50"><label for="fref50"><sup></sup></label><span id="FN"><br><br>yirtinčü-yin ] <i>T L1</i>;
+               Irtenčü-yin <i>L2</i>, Y̌ertenčü-’in <i>O</i>, Y̌ert'čü-’in <i>A</i>; <br><br></span></a> qamuġ <a>amitan-u̱<input type="checkbox" id="fref51"><label for="fref51"><sup></sup></label><span id="FN"><br><br>amitan-u̱ ] <i>O A L1 L2</i>;
+               amitan <i>T</i>; <br><br></span></a>
+         <a>šitügen<input type="checkbox" id="fref52"><label for="fref52"><sup></sup></label><span id="FN"><br><br>šitügen ] <i>O A L1 L2</i>;
+               sadun <i>T</i>; <br><br></span></a> boluġsan
+         </div>
+      
+      <div><br>§ 5
+         <br>
+         <a>Qatan<input type="checkbox" id="fref53"><label for="fref53"><sup></sup></label><span id="FN"><br><br>qatan ] <i>O A L1 L2</i>;
+               Qatun <i>T</i>; <br><br></span></a>
+          temür <a>ečige-tü<input type="checkbox" id="fref54"><label for="fref54"><sup></sup></label><span id="FN"><br><br>ečige-tü ] <i>T L1</i>;
+               ečigetü <i>A L2</i>, eči’getü <i>O</i>; <br><br></span></a>
+         <br>
+         <a><span id="inlineRdg">{ Qayir <i>T</i>, Qas <i>O A L1 L2</i>;  }</span></a> čilaġun <a>eke-tü<input type="checkbox" id="fref55"><label for="fref55"><sup></sup></label><span id="FN"><br><br>eke-tü ] <i>T L1</i>;
+               eketü <i>O L2</i>, ekitü <i>A</i>; <br><br></span></a>
+         <br>
+         <a>Qayilasun<input type="checkbox" id="fref56"><label for="fref56"><sup></sup></label><span id="FN"><br><br>qayilasun ] <i>L1</i>;
+               Qa'ilasun <i>A</i>, Qayilasu <i>T</i>, Qayilusun <i>O L2</i>; <br><br></span></a> modon <a>olan<input type="checkbox" id="fref57"><label for="fref57"><sup></sup></label><span id="FN"><br><br>olan ] <i>A L1 L2</i>;
+               olan qamtu <i>T</i>, olan-u̱ <i>O</i>; <br><br></span></a>
+          amitu
+         <br>
+         <a>Ġayiqamśiġ-tu<input type="checkbox" id="fref58"><label for="fref58"><sup></sup></label><span id="FN"><br><br>ġayiqamśiġ-tu ] <i>L1</i>;
+               Ġayiqamśiġ <i>T</i>, Ḡayiqamśiġtu. <i>L2</i>, Ḡayiq̈amšiġ-du <i>O</i>, Ḡayiq̈amśi'tu  <i>A</i>; <br><br></span></a>
+         
+         
+         <a>Boġda-yin<input type="checkbox" id="fref59"><label for="fref59"><sup></sup></label><span id="FN"><br><br>boġda-yin ] <i>L1 L2</i>;
+               Boġda-’in beri <i>O</i>, gegen geril-tü <i>T</i>, Boġdan-un  <i>A</i>; <br><br></span></a>
+         
+         </div>
+      
+      
+      <div><br>§ 6
+         
+         <div><br>§ 6
+            <br><a>Torḡan Ḡalayiqan eke-yin-de</a>
+            <br><a>Tosu ökü
+                dusuġan saġunam.</a>
+            <br>
+            <a>Todorqai-a öröśiyen öröśiy̌ebesü</a>
+            
+            <br>
+            <a>Toġ-a tüśig  ügii küsel
+               ĵirġalang-i engke esen atuġai::</a>
+            </div>
+         
+         <div><br>§ 6
+            <br><a>Örgen yeke<input type="checkbox" id="fref60"><label for="fref60"><sup></sup></label><span id="FN"><br><br>örgen yeke<i> emen. </i> ] y̌eke, 
+                  <i> sic. </i><i>A L1 L2</i>;
+                  Iši Qatun eǰin-ü̱ <i>O</i>; <br><br></span></a>
+            <a>ḡolomtan-dur<input type="checkbox" id="fref61"><label for="fref61"><sup></sup></label><span id="FN"><br><br>ḡolomtan-dur ] <i>A L2</i>;
+                  ġolomta-dur <i>L1</i>, ḡolomta-du <i>O</i>; <br><br></span></a> činu
+            <br><a>Ököö<input type="checkbox" id="fref62"><label for="fref62"><sup></sup></label><span id="FN"><br><br>ököö ] <i>O</i>;
+                  Ökiküü <i>A</i>, Ögekü <i>L1 L2</i>; <br><br></span></a>
+            
+            <a>toso-yi<input type="checkbox" id="fref63"><label for="fref63"><sup></sup></label><span id="FN"><br><br>toso-yi ] <i>A</i>;
+                  toso <i>O</i>, toson-i <i>L1 L2</i>; <br><br></span></a>
+             činu <a>ergün<input type="checkbox" id="fref64"><label for="fref64"><sup></sup></label><span id="FN"><br><br>ergün ] <i>O A</i>;
+                  <i>om.</i> <i>L1 L2</i>; <br><br></span></a>
+            <a>talbinam<input type="checkbox" id="fref65"><label for="fref65"><sup></sup></label><span id="FN"><br><br>talbinam ] <i>A L1 L2</i>;
+                  takinam <i>O</i>; <br><br></span></a>
+            <br><a>Örgeǰikü<input type="checkbox" id="fref66"><label for="fref66"><sup></sup></label><span id="FN"><br><br>örgeǰikü ] <i>A L1 L2</i>;
+                  Örgöǰikü <i>O</i>; <br><br></span></a>
+            <a>sayin<input type="checkbox" id="fref67"><label for="fref67"><sup></sup></label><span id="FN"><br><br>sayin ] <i>L1 L2</i>;
+                  sa'in <i>A</i>, sai̱i'n <i>O</i>; <br><br></span></a>
+            <a>törö-yin<input type="checkbox" id="fref68"><label for="fref68"><sup></sup></label><span id="FN"><br><br>törö-yin ] <i>L1 L2</i>;
+                  törö-'in <i>O A</i>; <br><br></span></a> dumda 
+            <br>Qaġan Qatun qamuġ ulus <a><span id="inlineRdg">{ engkesün <i>O A L2</i>, engke esen <i>L1</i>;  }</span></a>
+            <br>
+            <a><span id="inlineRdg">{ Ayil  <i>O</i>, <i>om.</i> <i>A L1 L2</i>;  }</span></a>
+            <a><span id="inlineRdg">{ ĵirġan <i>A L1 L2</i>, ĵirġal  <i>O</i>;  }</span></a>
+            <a>ĵiyaġan<input type="checkbox" id="fref69"><label for="fref69"><sup></sup></label><span id="FN"><br><br>ĵiyaġan<i> emen. </i> ] ĵiy̌aġan, 
+                  <i> sic. </i><i>O L1 L2</i>;
+                  ĵirġan <i>A</i>; <br><br></span></a>
+            <a>ögtügei<input type="checkbox" id="fref70"><label for="fref70"><sup></sup></label><span id="FN"><br><br>ögtügei ] <i>L1 L2</i>;
+                  ögtüküi  <i>A</i>, ögtüigei  <i>O</i>; <br><br></span></a>
+            
+            
+            
+            
+            </div>
+         </div>
+      
+      <div><br>§ 7
+         <br>
+         <a><span id="inlineRdg">{ Deger-e <i>T</i>, <i>om.</i> <i>A L2</i>;  }</span></a> Burqan <a>Tngri-yin<input type="checkbox" id="fref71"><label for="fref71"><sup></sup></label><span id="FN"><br><br>tngri-yin ] <i>T L2</i>;
+               Tngeri-'in <i>A</i>; <br><br></span></a>
+         
+         <a><span id="inlineRdg">{ ĵiy̌aġaġsan <i>T</i>, ĵakiġsan <i>A L2</i>;  }</span></a>
+         
+         <br>
+         <a>Börtemülǰin Sečen Qatun üliyegsen<input type="checkbox" id="fref72"><label for="fref72"><sup></sup></label><span id="FN"><br><br>börtemülǰin 
+               ... 
+               
+               qatun üliyegsen ] <i>L2</i>;
+               <i>om.</i> <i>T O A</i>; <br><br></span></a>
+         
+         <br>
+         <a>Bügüde<input type="checkbox" id="fref73"><label for="fref73"><sup></sup></label><span id="FN"><br><br>bügüde ] <i>T L2</i>;
+               Bügüden <i>A</i>; <br><br></span></a> qamuġ amitan-u śitügen boloġsan
+         </div>
+      
+      
+      <div><br>§ 8
+         
+         <div><br>§ 8 (version 1: T only)
+            <br>
+            <a>Čing temür ečige-tü </a>
+            <br>
+            <a>Činggis čilaġun eke-tü</a>
+            <br>
+            <a>Čindamuni olan amitu čimeg-tü </a>
+            
+            </div>
+         
+         <div><br>§ 8i
+            <br><a>Qatan temür ečigetü </a>
+            <br><a>Qas čilaġun eketü</a>
+            
+            <br><a>Qayilusun modon olan amitu</a>
+            
+            <br><a>Ḡayiqamśiġtu. Boġda-yin</a>
+            
+            </div>
+         
+         <div><br>§ 8ii
+            <br><a>Örgen y̌eke ḡolomtan-dur činu</a>
+            
+            <br><a>Ögekü toson-i činu talbinam</a>
+            
+            </div>
+         
+         <div><br>§ 8iii
+            <br><a>Örgeǰikü sayin törö-yin dumda </a>
+            
+            <br><a>Qaġan Qatun qamuġ ulus engkesün ĵirġan ĵiy̌aġan ögtügei</a>
+            
+            </div>
+         </div>
+      
+      <div><br>§ 9
+         
+         <div><br>§ 9i
+            <br>
+            <a>Qan  Qayirqan
+               eke-de</a>
+            <br>
+            <a>Qara ariki qalim ökö talbin saġunam.</a>
+            </div>
+         
+         <div><br>§ 9ii
+            <br>
+            <a>Qayirlaǰu amusan 
+               sonirqan ġayiqaqu metü</a>
+            <br>
+            <a>y̌eke ĵirġalang engke esen atuġai.</a>
+            </div>
+         
+         <div><br>§ 9iii
+            
+            <br>
+            <a>Burq̈ad-un<input type="checkbox" id="fref74"><label for="fref74"><sup></sup></label><span id="FN"><br><br>burq̈ad-un ] <i>A L2</i>;
+                  eǰen-ü <i>Z</i>, Čakrawadun eǰen <i>Rprime</i>; <br><br></span></a>
+            <a>qubilġad<input type="checkbox" id="fref75"><label for="fref75"><sup></sup></label><span id="FN"><br><br>qubilġad ] <i>A</i>;
+                  qubilġan <i>L2 Z Rprime</i>; <br><br></span></a>
+            <a>Seçen<input type="checkbox" id="fref76"><label for="fref76"><sup></sup></label><span id="FN"><br><br>seçen ] <i>Z Rprime</i>;
+                  Činčeg <i>A</i>, Činčeng <i>L2</i>; <br><br></span></a>
+            <a>Qaḡan-i<input type="checkbox" id="fref77"><label for="fref77"><sup></sup></label><span id="FN"><br><br>qaḡan-i ] <i>Z</i>;
+                  Qaġan-i <i>A L2</i>, Qan-u <i>Rprime</i>; <br><br></span></a>
+            <a>çakiġsan<input type="checkbox" id="fref78"><label for="fref78"><sup></sup></label><span id="FN"><br><br>çakiġsan ] <i>Z Rprime</i>;
+                  ĵakiġsan <i>A L2</i>; <br><br></span></a>
+            
+            <br><a>Bodistw-un<input type="checkbox" id="fref79"><label for="fref79"><sup></sup></label><span id="FN"><br><br>bodistw -un<i> emen. </i> ] Bodasung, 
+                  <i> sic. </i><i>A</i>;
+                  Bodasug-un <i>L2 Z</i>, Bodisug-ün <i>Rprime</i>; <br><br></span></a>
+            <a>qubilġad<input type="checkbox" id="fref80"><label for="fref80"><sup></sup></label><span id="FN"><br><br>qubilġad ] <i>A</i>;
+                  qubilġan <i>L2 Z Rprime</i>; <br><br></span></a>
+            <a>Čambui<input type="checkbox" id="fref81"><label for="fref81"><sup></sup></label><span id="FN"><br><br>čambui ] <i>Z Rprime</i>;
+                  Čimbi <i>A</i>, Čambai <i>L2</i>; <br><br></span></a>
+            <a>Qatun-i<input type="checkbox" id="fref82"><label for="fref82"><sup></sup></label><span id="FN"><br><br>qatun-i ] <i>Z</i>;
+                  Qatun-u <i>Rprime</i>, darq̈an <i>A</i>, darqan <i>L2</i>; <br><br></span></a>
+            <a>üliyegsen<input type="checkbox" id="fref83"><label for="fref83"><sup></sup></label><span id="FN"><br><br>üliyegsen ] <i>Z Rprime</i>;
+                  ülǰie'sen <i>A L2</i>; <br><br></span></a>
+            </div>
+         </div>
+      
+      <div><br>§ 10 (A, L2, Z, T* only)
+         <br><a><span id="inlineRdg">{ Misir <i>Rprime</i>, Mišiwa <i>Z</i>, Mišid <i>A L2</i>;  }</span></a>
+         <a><span id="inlineRdg">{ geged <i>A</i>, kiged <i>L2</i>, <i>om.</i> <i>Z Rprime</i>;  }</span></a>
+         <a>bolod<input type="checkbox" id="fref84"><label for="fref84"><sup></sup></label><span id="FN"><br><br>bolod ] <i>A L2 Rprime</i>;
+               boloḏ <i>Z</i>; <br><br></span></a> temür <a>ečige-tü<input type="checkbox" id="fref85"><label for="fref85"><sup></sup></label><span id="FN"><br><br>ečige-tü ] <i>Z Rprime</i>;
+               ečigetü <i>A L2</i>; <br><br></span></a>
+         
+         <br><a><span id="inlineRdg">{ Mam . _  <i>Z</i>, Mimun <i>A L2</i>, Miśil <i>Rprime</i>;  }</span></a>
+         <a>eldeb<input type="checkbox" id="fref86"><label for="fref86"><sup></sup></label><span id="FN"><br><br>eldeb ] <i>Z Rprime</i>;
+               <i>om.</i> <i>A L2</i>; <br><br></span></a>
+         <a><input type="checkbox" id="fref87"><label for="fref87"><sup></sup></label><span id="FN"><br><br>eldeb ] <i>Z</i>; ĵüyil <i>Rprime</i>, ĵüil-üd <i>A</i>, ĵüil-ün <i>L2</i>; <br><br></span></a>
+         <a><span id="inlineRdg">{ čilaḡun <i>Z Rprime</i>, erdeni-yin <i>L2</i>, erdeni-'in <i>A</i>;  }</span></a>
+         <a>eke-tü<input type="checkbox" id="fref88"><label for="fref88"><sup></sup></label><span id="FN"><br><br>eke-tü ] <i>Z</i>;
+               eketü <i>L2 A Rprime</i>; <br><br></span></a>.
+         <br>Mindasun <a>ĵögölen<input type="checkbox" id="fref89"><label for="fref89"><sup></sup></label><span id="FN"><br><br>ĵögölen ] <i>Z</i>;
+               ĵökilen <i>A L2</i>, ĵögelen <i>Rprime</i>; <br><br></span></a>
+         <a>düritü<input type="checkbox" id="fref90"><label for="fref90"><sup></sup></label><span id="FN"><br><br>düritü ] <i>Rprime</i>;
+               <i>om.</i> <i>A L2 Z</i>; <br><br></span></a>
+         <a>modon olan<input type="checkbox" id="fref91"><label for="fref91"><sup></sup></label><span id="FN"><br><br>modon olan ] <i>Z Rprime</i>;
+               <i>om.</i> <i> L2</i>; <br><br></span></a> amitu
+         <br><a>Mingġan<input type="checkbox" id="fref92"><label for="fref92"><sup></sup></label><span id="FN"><br><br>mingġan ] <i>A L2 Rprime</i>;
+               Mingḡan <i>Z</i>; <br><br></span></a>
+         <a>kalab ṯur<input type="checkbox" id="fref93"><label for="fref93"><sup></sup></label><span id="FN"><br><br>Z: ṯ- here looks
+               like an o/u at the beginning of a suffix, such as the genitive
+               -un<br><br></span><input type="checkbox" id="fref94"><label for="fref94"><sup></sup></label><span id="FN"><br><br>kalab ṯur ] <i>Z</i>;
+               ǩalaba-tu <i>A</i>, ǩalab-tur <i>L2 Rprime</i>; <br><br></span></a>
+         <a>geril<input type="checkbox" id="fref95"><label for="fref95"><sup></sup></label><span id="FN"><br><br>geril ] <i>A</i>;
+               gerel <i>L2 Z Rprime</i>; <br><br></span></a>
+         <a>boloġsan<input type="checkbox" id="fref96"><label for="fref96"><sup></sup></label><span id="FN"><br><br>boloġsan ] <i></i>;
+               boloḡsan <i>Z</i>; <br><br></span></a>
+         <a>Boġda-yin<input type="checkbox" id="fref97"><label for="fref97"><sup></sup></label><span id="FN"><br><br>boġda-yin ] <i>L2</i>;
+               Boġda-'in <i>A</i>, <i>om.</i> <i>Z Rprime</i>; <br><br></span></a>
+         </div>
+      
+      <div><br>§ 11
+         
+         <div><br>§ 11i
+            <br> Örgen 
+            <a>ḡolomtan-dur<input type="checkbox" id="fref98"><label for="fref98"><sup></sup></label><span id="FN"><br><br>ḡolomtan-dur ] <i>A</i>;
+                  ḡolomtan-du <i>L2</i>; <br><br></span></a>
+            <a>čiṉu<input type="checkbox" id="fref99"><label for="fref99"><sup></sup></label><span id="FN"><br><br>čiṉu ] <i>A</i>;
+                  <i>om.</i> <i>L2</i>; <br><br></span></a>
+            <br><a>Araǰa<input type="checkbox" id="fref100"><label for="fref100"><sup></sup></label><span id="FN"><br><br>araǰa ] <i>L2</i>;
+                  Araǰin <i>A</i>; <br><br></span></a> šitam-yi čiṉu <a>dusġanam<input type="checkbox" id="fref101"><label for="fref101"><sup></sup></label><span id="FN"><br><br>dusġanam ] <i>L2</i>;
+                  dusaġanam <i>A</i>; <br><br></span></a>.
+            </div>
+         
+         <div><br>§ 11ii
+            <br><a>Arbiǰiqu<input type="checkbox" id="fref102"><label for="fref102"><sup></sup></label><span id="FN"><br><br>arbiǰiqu ] <i>A</i>;
+                  Abǰiqu <i>L2</i>; <br><br></span></a>
+            <a>sayin<input type="checkbox" id="fref103"><label for="fref103"><sup></sup></label><span id="FN"><br><br>sayin ] <i>L2</i>;
+                  sa'in <i>A</i>; <br><br></span></a>
+            <a>törö-yin<input type="checkbox" id="fref104"><label for="fref104"><sup></sup></label><span id="FN"><br><br>törö-yin ] <i>L2</i>;
+                  törö-'in <i>A</i>; <br><br></span></a> dumda.. 
+            <br>
+            <a>Qaġan qatun qamuġ ulus engkesün ǰirḡan ǰirḡan
+               ögtügi...<input type="checkbox" id="fref105"><label for="fref105"><sup></sup></label><span id="FN"><br><br>qaġan 
+                  ... 
+                  
+                  ǰirḡan ögtügi ] <i>A</i>;
+                  <i>om.</i> <i>L2</i>; <br><br></span></a>
+            
+            </div>
+         
+         
+         <div><br>§ 11.i
+            <br><a>Al
+               Ḡalayiqan eke-te</a>
+            
+            <br><a>Araǰa 
+               śitam - dusaḡan saḡuṉam</a>
+            
+            <br><a>Amuḡulang yeke <a>ĵirḡalang-gi<input type="checkbox" id="fref106"><label for="fref106"><sup></sup></label><span id="FN"><br><br>ĵirḡalang-gi ] <i>Z</i>;
+                     ĵirġalang-iyar <i>Rprime</i>; <br><br></span></a>
+               engke esen  atuḡai</a>
+            
+            </div>
+         
+         <div><br>§ 11.ii
+            <br>Uḡuraġ <a>ötegečini<input type="checkbox" id="fref107"><label for="fref107"><sup></sup></label><span id="FN"><br><br>ötegečini ] <i>Z</i>;
+                  ödke-yi činu <i>Rprime</i>; <br><br></span></a> ḡarḡaǰu
+            <br><a>Unda<input type="checkbox" id="fref108"><label for="fref108"><sup></sup></label><span id="FN"><br><br>unda ] <i>Z</i>;
+                  Umda <i>Rprime</i>; <br><br></span></a>
+            <a>darasun<input type="checkbox" id="fref109"><label for="fref109"><sup></sup></label><span id="FN"><br><br>darasun ] <i>Z</i>;
+                  darasun-i <i>Rprime</i>; <br><br></span></a>
+            <a>dusḡan<input type="checkbox" id="fref110"><label for="fref110"><sup></sup></label><span id="FN"><br><br>dusḡan ] <i>Z</i>;
+                  dusaġan <i>Rprime</i>; <br><br></span></a> saḡuṉam
+            <br><a>Uruġśida<input type="checkbox" id="fref111"><label for="fref111"><sup></sup></label><span id="FN"><br><br>uruġśida ] <i>Z</i>;
+                  <i>om.</i> <i>Rprime</i>; <br><br></span></a> öröśiyen amsan
+            <a>soyirqabasu<input type="checkbox" id="fref112"><label for="fref112"><sup></sup></label><span id="FN"><br><br>soyirqabasu ] <i>Z</i>;
+                  toġtoġamu <i>Rprime</i>; <br><br></span></a>
+            </div>
+         
+         <div><br>§ 11.iii
+            <br>Örgeǰikü yeke <a>töröi-gi<input type="checkbox" id="fref113"><label for="fref113"><sup></sup></label><span id="FN"><br><br>töröi-gi ] <i>Z</i>;
+                  törö-yin <i>Rprime</i>; <br><br></span></a>
+            <br><a><span id="inlineRdg">{ Qan <i>Rprime</i>, Keng <i>Z</i>;  }</span></a> Qatun qamuġ yeke ulus engke esen atuḡai
+            </div>
+         
+         <div><br>§ 11.iv
+            <br>Çambutib-un degedü eǰen <a>qatun-i<input type="checkbox" id="fref114"><label for="fref114"><sup></sup></label><span id="FN"><br><br>qatun-i ] <i>Z</i>;
+                  qatun-u <i>Rprime</i>; <br><br></span></a>
+            <a>örgen yeke ḡolomdan-i öčig tamaki örgün
+               tegüskebei::<input type="checkbox" id="fref115"><label for="fref115"><sup></sup></label><span id="FN"><br><br>örgen 
+                  ... 
+                  
+                  örgün tegüskebei ] <i>Z</i>;
+                  <i>om.</i> <i>Rprime</i>; <br><br></span></a><input type="checkbox" id="fref116"><label for="fref116"><sup></sup></label><span id="FN"><br><br>Rprime: Parablepsis: ZR skipped the
+               rest of the line 3 and missed the ending of this prayer, and
+               continued from the next line, thus appending this prayer to the
+               beginning of the Tügel.<br><br></span>
+            </div>
+         </div>
+      
+      
+      <div><br>§ 12
+         <br>
+         <a>Ötö'g Qan-u <a>ölmön<input type="checkbox" id="fref117"><label for="fref117"><sup></sup></label><span id="FN"><br><br>ölmön ] <i>A</i>;
+                  ölmö̱n <i>L2</i>; <br><br></span></a><input type="checkbox" id="fref118"><label for="fref118"><sup></sup></label><span id="FN"><br><br>ötö'g 
+               ... 
+               
+               qan-u ölmön ] <i>A L2</i>;
+               Etügen ayin <i>T</i>, Unduġ-a Qan ülemǰi-'in <i>O</i>; <br><br></span></a>
+         
+         <a>čaġ büküi-eče<input type="checkbox" id="fref119"><label for="fref119"><sup></sup></label><span id="FN"><br><br>čaġ büküi-eče ] <i>O A L2</i>;
+               čaġ-ača <i>T</i>; <br><br></span></a>
+         
+         <br> Öndör <a>yeke<input type="checkbox" id="fref120"><label for="fref120"><sup></sup></label><span id="FN"><br><br>yeke<i> emen. </i> ] y̌eke, 
+               <i> sic. </i><i>T A L2</i>;
+               <i>om.</i> <i>O</i>; <br><br></span></a>
+         <a>aġulan-i<input type="checkbox" id="fref121"><label for="fref121"><sup></sup></label><span id="FN"><br><br>aġulan-i ] <i>T</i>;
+               aġula-'in <i>O A</i>, uula-yin <i>L2</i>; <br><br></span></a>
+         <a>dobun<input type="checkbox" id="fref122"><label for="fref122"><sup></sup></label><span id="FN"><br><br>dobun ] <i>O A L2</i>;
+               dobu <i>T</i>; <br><br></span></a> büküi-eče 
+         <br>
+         <a>Örgen yeke dalai-yin  čalčiġan čaġ
+            büküi-eče<input type="checkbox" id="fref123"><label for="fref123"><sup></sup></label><span id="FN"><br><br>örgen 
+               ... 
+               
+               čaġ büküi-eče<i> emen. </i> ] y̌eke, 
+               <i> sic. </i><i>T A</i>;
+               <i>om.</i> <i>O L2</i>; <br><br></span></a>
+         
+         <br>
+         <a>Örlög<input type="checkbox" id="fref124"><label for="fref124"><sup></sup></label><span id="FN"><br><br>örlög ] <i>L2</i>;
+               Ö̱rlö̱'g <i>O A</i>, Örlig <i>T</i>; <br><br></span></a>
+         <a> sayid-un<input type="checkbox" id="fref125"><label for="fref125"><sup></sup></label><span id="FN"><br><br>sayid-un ] <i>T O L2</i>;
+                sa'id-un <i>DA</i>; <br><br></span></a>
+         <a> keüked<input type="checkbox" id="fref126"><label for="fref126"><sup></sup></label><span id="FN"><br><br>keüked ] <i>O A L2</i>;
+                köüken <i>T</i>; <br><br></span></a> büküi-eče <a>egüdügsen<input type="checkbox" id="fref127"><label for="fref127"><sup></sup></label><span id="FN"><br><br>egüdügsen ] <i>T</i>;
+               egüddüġsan <i>O A</i>, egüddügsen <i>L2</i>; <br><br></span></a>
+         
+         </div>
+      
+      <div><br>§ 13
+         
+         <br>
+         <a><span id="inlineRdg">{ Čui <i>T</i>, Čiṉeger  ki̱ged <i>O</i>, Čiker keged <i>A</i>, Čiker kiged <i>L2</i>;  }</span></a> bolod temür <a>ečige-tü<input type="checkbox" id="fref128"><label for="fref128"><sup></sup></label><span id="FN"><br><br>ečige-tü ] <i>T</i>;
+               ečigetü <i>A L2</i>, (e)čigetü <i>O</i>; <br><br></span></a>
+         <br>
+         <a>Čilaġun kiged eldeb ĵüil erdeni eke-tü<input type="checkbox" id="fref129"><label for="fref129"><sup></sup></label><span id="FN"><br><br>čilaġun 
+               ... 
+               
+               erdeni eke-tü ] <i>T</i>;
+               Šar-a qayir <a>čilaġun<input type="checkbox" id="fref130"><label for="fref130"><sup></sup></label><span id="FN"><br><br>čilaġun ] <i>O A</i>;
+                     čilaḡun <i>L2</i>; <br><br></span></a> eketü <i>O A L2</i>; <br><br></span></a>
+         
+         
+         <br>
+         <a>Čigürsün ĵö̱gölen modon olan amitu<input type="checkbox" id="fref131"><label for="fref131"><sup></sup></label><span id="FN"><br><br>čigürsün 
+               ... 
+               
+               olan amitu ] <i>T</i>;
+               <a>Šarilǰiken<input type="checkbox" id="fref132"><label for="fref132"><sup></sup></label><span id="FN"><br><br>šarilǰiken ] <i>A L2</i>;
+                     Śirilǰikene <i>O</i>; <br><br></span></a> čaġan 
+               <a>ebesün<input type="checkbox" id="fref133"><label for="fref133"><sup></sup></label><span id="FN"><br><br>ebesün ] <i>A L2</i>;
+                     ebsün <i>O</i>; <br><br></span></a> amitu <i>O A</i>; <br><br></span></a>
+         
+         <br>
+         <a>Čigürtel ügei olan ĵüil idiśitü<input type="checkbox" id="fref134"><label for="fref134"><sup></sup></label><span id="FN"><br><br>čigürtel 
+               ... 
+               
+               ĵüil idiśitü ] <i>T</i>;
+               <a>Šar-a<input type="checkbox" id="fref135"><label for="fref135"><sup></sup></label><span id="FN"><br><br>šar-a ] <i>O A</i>;
+                     Šara <i>L2</i>; <br><br></span></a>
+               <a>tergütü<input type="checkbox" id="fref136"><label for="fref136"><sup></sup></label><span id="FN"><br><br>tergütü ] <i>O</i>;
+                     terigüütü <i>A L2</i>; <br><br></span></a> čaġan qonin <a>takilġ-a-tu<input type="checkbox" id="fref137"><label for="fref137"><sup></sup></label><span id="FN"><br><br>takilġ-a-tu ] <i>A L2</i>;
+                     takilġatu <i>O</i>; <br><br></span></a> <i>O A</i>; <br><br></span></a>
+         
+         <a><span id="inlineRdg">{ Iši Qatun Eǰin <i>O</i>, Boġdan-un <i>A</i>, Boġda-yin <i>L2</i>;  }</span></a>
+         
+         
+         
+         </div>
+      
+      <div><br>§ 14
+         
+         <div><br>§ 14.i
+            <br>
+            <a>Usaqal Ḡalayiqan eke-de aqurig ödei-i dusaġan
+               saġunam..</a>
+            </div>
+         
+         <div><br>§ 14.ii
+            <br>
+            <a>Öröśiy̌en
+               
+               </a>
+            
+            </div>
+         
+         <div><br>§ 14.iii
+            <br>
+            <a>
+               -ḏal
+               buu učaratuġai. </a>
+            <br>
+            <a>Quduġ usun-du buu
+               unatuġai.</a>
+            <br>
+            <a>Qulagai degeremdü buu učirtuġai.</a>
+            </div>
+         
+         <div><br>§ 14.i
+            <br>Ö̱rgen 
+            <a>ḡolomta-dur<input type="checkbox" id="fref138"><label for="fref138"><sup></sup></label><span id="FN"><br><br>ḡolomta-dur ] <i>O</i>;
+                  ḡolomta-tur <i>A L2</i>; <br><br></span></a> činu
+            <br><a>Arǰa<input type="checkbox" id="fref139"><label for="fref139"><sup></sup></label><span id="FN"><br><br>arǰa ] <i>O A</i>;
+                  Araǰa <i>L2</i>; <br><br></span></a>
+            <a>šitam-yi<input type="checkbox" id="fref140"><label for="fref140"><sup></sup></label><span id="FN"><br><br>šitam-yi ] <i>A O</i>;
+                  šitam <i>L2</i>; <br><br></span></a> činu <a>dusġanam<input type="checkbox" id="fref141"><label for="fref141"><sup></sup></label><span id="FN"><br><br>dusġanam ] <i>L2</i>;
+                  ergünem <i>O</i>, dusaġanam <i>A</i>; <br><br></span></a>
+            </div>
+         
+         <div><br>§ 14.ii
+            <br><a>Arbiǰiqu<input type="checkbox" id="fref142"><label for="fref142"><sup></sup></label><span id="FN"><br><br>arbiǰiqu ] <i>A L2</i>;
+                  Ö̱rgö’ǰikü <i>O</i>; <br><br></span></a>
+            
+            <a>sayin<input type="checkbox" id="fref143"><label for="fref143"><sup></sup></label><span id="FN"><br><br>sayin ] <i>O L2</i>;
+                  sa'in <i>A</i>; <br><br></span></a>
+            <a>törö-yin<input type="checkbox" id="fref144"><label for="fref144"><sup></sup></label><span id="FN"><br><br>törö-yin ] <i>L2</i>;
+                  törö-’in <i>O A</i>; <br><br></span></a> dumda
+            
+            <br>Qaġan<input type="checkbox" id="fref145"><label for="fref145"><sup></sup></label><span id="FN"><br><br>Qaġan qatun...ögtügei] om. QL2 <br><br></span> Qatun qamuġ <a>ulus<input type="checkbox" id="fref146"><label for="fref146"><sup></sup></label><span id="FN"><br><br>ulus ] <i>A</i>;
+                  ulus-‘y̌an <i>O</i>; <br><br></span></a> engkisün <input type="checkbox" id="fref147"><label for="fref147"><sup></sup></label><span id="FN"><br><br>O: Yang has engkesün,
+               though DA also has a long -i- for engkisün<br><br></span>
+            
+            <br>Aiin <input type="checkbox" id="fref148"><label for="fref148"><sup></sup></label><span id="FN"><br><br>O: Yang reads sayin<br><br></span>
+            <a>ĵirḡan<input type="checkbox" id="fref149"><label for="fref149"><sup></sup></label><span id="FN"><br><br>ĵirḡan ] <i>A</i>;
+                  ĵiraġan <i>O</i>; <br><br></span></a>
+            <a>ĵiyaġan<input type="checkbox" id="fref150"><label for="fref150"><sup></sup></label><span id="FN"><br><br>ĵiyaġan<i> emen. </i> ] ĵiy̌aġan, 
+                  <i> sic. </i><i>O</i>;
+                  ĵirḡan <i>A</i>; <br><br></span></a>
+            <a>ögtügi<input type="checkbox" id="fref151"><label for="fref151"><sup></sup></label><span id="FN"><br><br>ögtügi ] <i>A</i>;
+                  ö'gtüigei <i>O</i>; <br><br></span></a>
+            
+            
+            
+            </div>
+         </div>
+      
+      <div><br>§ 15
+         
+         <div><br>§ 15.i
+            <br>
+            <a><span id="inlineRdg">{ Alad <i>O</i>, Alun <i>A L2</i>;  }</span></a>
+            <a>aniyar-tu<input type="checkbox" id="fref152"><label for="fref152"><sup></sup></label><span id="FN"><br><br>aniyar-tu<i> emen. </i> ] aniy̌ar-tu, 
+                  <i> sic. </i><i>A L2</i>;
+                  aniy̌ar-du <i>O</i>; <br><br></span></a>
+            <a>arǰa<input type="checkbox" id="fref153"><label for="fref153"><sup></sup></label><span id="FN"><br><br>arǰa ] <i>O</i>;
+                  araǰa <i>L2</i>, araǰin <i>A</i>; <br><br></span></a>
+            <a>šitam-yi<input type="checkbox" id="fref154"><label for="fref154"><sup></sup></label><span id="FN"><br><br>šitam-yi ] <i>L2</i>;
+                  šatam-yi <i>O A</i>; <br><br></span></a>
+            <input type="checkbox" id="fref155"><label for="fref155"><sup></sup></label><span id="FN"><br><br>O: Yang has śitam<br><br></span> činu <a>ergünem<input type="checkbox" id="fref156"><label for="fref156"><sup></sup></label><span id="FN"><br><br>ergünem ] <i>A O</i>;
+                  dusġan(a)m <i>L2</i>; <br><br></span></a>
+            </div>
+         
+         <div><br>§ 15.ii
+            <br><a>Arbiǰiqu<input type="checkbox" id="fref157"><label for="fref157"><sup></sup></label><span id="FN"><br><br>arbiǰiqu ] <i>A L2</i>;
+                  Arbǰiqu <i>O</i>; <br><br></span></a> sayin törö-’in dumda
+            <br><a>Qaġan<input type="checkbox" id="fref158"><label for="fref158"><sup></sup></label><span id="FN"><br><br>qaġan ] <i>O A</i>;
+                  Qaḡan <i>L2</i>; <br><br></span></a> Qatun qamuġ ulus <a>engkesün<input type="checkbox" id="fref159"><label for="fref159"><sup></sup></label><span id="FN"><br><br>engkesün ] <i>O L2</i>;
+                  engkisün <i>A</i>; <br><br></span></a>
+            <input type="checkbox" id="fref160"><label for="fref160"><sup></sup></label><span id="FN"><br><br>O: Yang has engkesün<br><br></span>
+            
+            <br><a><span id="inlineRdg">{ Aiin  <i>O</i>, <i>om.</i> <i>A L2</i>;  }</span></a>
+            <a>ĵirġan<input type="checkbox" id="fref161"><label for="fref161"><sup></sup></label><span id="FN"><br><br>ĵirġan ] <i>L2</i>;
+                  ĵiraġan <i>A O</i>; <br><br></span></a>
+             öġtü̱gei
+            </div>
+         </div>
+      
+      <div><br>§ 16
+         <br>
+         <a><span id="inlineRdg">{ Iśi Qatun Eçin-ü̱  <i>O</i>, <i>om.</i> <i>A L2</i>;  }</span></a>
+         <a>Ḡal-un <a>Öčö̱ġ<input type="checkbox" id="fref162"><label for="fref162"><sup></sup></label><span id="FN"><br><br>öčö̱ġ ] <i>O</i>;
+                  Irögel <i>A</i>; <br><br></span></a> tegüsbe<input type="checkbox" id="fref163"><label for="fref163"><sup></sup></label><span id="FN"><br><br>ḡal-un 
+               ... 
+               
+               öčö̱ġ tegüsbe ] <i>O A</i>;
+               <i>om.</i> <i>L2</i>; <br><br></span></a>
+         
+         </div>
+      
+      
+      G: starts on [10-2] (The following hearth prayers are found about 50 pages into
+      the Altan Bičig copied from Ejen Qoro'a. It follows the same general
+      schema.)
+      
+      <div><br>§ 17
+         <br><a>Deger-e Tngri-yin
+            töbśin büküi-eče</a>
+         <br><a>Door-a Etügen eke-yin ölmei büküi-eče</a>
+         <br><a>Erte Činggis Qaḡan-u čakiġsan</a>
+         </div>
+      
+      <div><br>§ 18
+         <br><a>Čing temür
+            ečige-tü</a>
+         <br><a><a>Činggis čilagun<input type="checkbox" id="fref164"><label for="fref164"><sup></sup></label><span id="FN"><br><br>činggis čilagun ] <i>G</i>;
+                  Činggis-(m)-čilagun <i>L3</i>; <br><br></span></a> eke-tü</a>
+         <br><a>Čindamani modon olan
+            amitu</a>
+         </div>
+      
+      <div><br>§ 19
+         
+         <div><br>§ 19.i
+            <br><a>Köbčin törö-yin eǰen boloġsan</a>
+            <br><a>Gür ulus-un eke
+               boloġsan</a>
+            </div>
+         
+         <div><br>§ 19.ii
+            <br><a>Torḡon ṉiḡurtu</a>
+            <br><a>Toson <a>čirayitu<input type="checkbox" id="fref165"><label for="fref165"><sup></sup></label><span id="FN"><br><br>čirayitu ] <i>L3</i>;
+                     čira'itu <i>G</i>; <br><br></span></a></a>
+            </div>
+         </div>
+      
+      <div><br>§ 20
+         
+         <div><br>§ 20.i
+            <br><a>Boġda-yin Odqan
+               Ḡalayiqan <a>ekede<input type="checkbox" id="fref166"><label for="fref166"><sup></sup></label><span id="FN"><br><br>ekede ] <i>G</i>;
+                     eketü <i>L3</i>; <br><br></span></a> öber-uruḡu činu</a>
+            <br><a>Ögekün darasun-i
+               činu dusqan saḡunam.</a>
+            </div>
+         
+         <div><br>§ 20.ii
+            <br><a>Ögedlekü sayin törö-yin eǰen</a>
+            <br><a>Qaḡan qatun qamuġ ulus-dur-y̌ian</a>
+            <br><a>Engke <a>ĵirḡalang-yi-iyan<input type="checkbox" id="fref167"><label for="fref167"><sup></sup></label><span id="FN"><br><br>ĵirḡalang-yi- iyan<i> emen. </i> ] 'yan, 
+                     <i> sic. </i><i>G</i>;
+                     ĵirḡalang-yi-y̌ian <i>L3</i>; <br><br></span></a> ĵirḡan ĵay̌aḡan atuḡai::</a>
+            </div>
+         </div>
+      
+      
+      <div><br>§ 21
+         <br><a>Degere y̌erin
+            <a>yisün<input type="checkbox" id="fref168"><label for="fref168"><sup></sup></label><span id="FN"><br><br>yisün ] <i>G</i>;
+                  y̌isün <i>L3</i>; <br><br></span></a>tngri-deče ĵay̌aḡabar egüdügsen</a>
+         <br><a>Y̌isükei Baḡatur ečige-eče čečeg-üd-y̌ier egüdügsen</a>
+         <br><a>Sutai Ögelen eke-eče temür ölögei tabulun törögsen</a>
+         </div>
+      
+      <div><br>§ 22
+         <br><a>Wčirbaṉi<input type="checkbox" id="fref169"><label for="fref169"><sup></sup></label><span id="FN"><br><br>wčirbaṉi ] <i>G</i>;
+               Wčarbaṉi <i>L3</i>; <br><br></span></a> Baḡatur  bolon qubiluġsan
+         <br><a>Onon mören-ü Deligün Boldaġ-tu törögsen</a>
+         <br><a>Olan Mongġol ulus-y̌ian
+             büküi-dür</a>
+         </div>
+      
+      <div><br>§ 23
+         <br><a>Börtegelčin y̌eke Sečen Qatun-tu</a>
+         <br><a>Soy̌orqal ĵarliġ baḡulḡaġsan</a>
+         <br><a>Bey-e-de degel malaqan-i emüsgegsen</a>
+         <br><a>Bilig-ten<input type="checkbox" id="fref170"><label for="fref170"><sup></sup></label><span id="FN"><br><br>bilig-ten ] <i>L3</i>;
+               Belig-ten <i>G</i>; <br><br></span></a> sayid- irüger irügegsen-i irügemüi::
+         </div>
+      
+      <div><br>§ 24
+         <br><a>Dalai mören-i čalčig büküi-eče</a>
+         <br>Dargi Qongġor-un <a>daḡaḡan<input type="checkbox" id="fref171"><label for="fref171"><sup></sup></label><span id="FN"><br><br>daḡaḡan ] <i>L3</i>;
+               daḡaġ <i>G</i>; <br><br></span></a> büküi-eče
+         </div>
+      
+      <div><br>§ 25
+         <br>Bulaġ-un usun-u <a><span id="inlineRdg">{ čilčig <i>L3</i>, čalčig <i>G</i>;  }</span></a> büküi-eče
+         <br>-tan <a><span id="inlineRdg">{ abqaṉar-un <i>L3</i>, abaqar-un <i>G</i>;  }</span></a>
+         <a><span id="inlineRdg">{ keüked <i>L3</i>, keüken <i>G</i>;  }</span></a> büküi-eče
+         </div>
+      
+      <div><br>§ 26
+         <br><a><span id="inlineRdg">{ Ǩangǩa <i>L3</i>, Ge''ge <i>G</i>;  }</span></a> möre̱n-ü čalčig büküi-eče
+         <br><a>Gerel-ten abqaṉar-un
+             büküi-eče
+            boluġsan</a>
+         <br><a>Ḡal ḡolomta..</a>
+         </div>
+      
+      <div><br>§ 27
+         <br>Deger-e tngri-de kürüm-e
+         <a>uniyar-tu<input type="checkbox" id="fref172"><label for="fref172"><sup></sup></label><span id="FN"><br><br>uniyar-tu ] <i>G</i>;
+               uniy̌ar-tu <i>L3</i>; <br><br></span></a>
+         <br>Door-a Etügen eke <a>ṉebte<input type="checkbox" id="fref173"><label for="fref173"><sup></sup></label><span id="FN"><br><br>ṉebte ] <i>G</i>;
+                <i>L3</i>; <br><br></span></a> ilčitü
+         </div>
+      
+      <div><br>§ 28
+         <br><a>Śira kilaḡan ebesün
+            amitu</a>
+         <br><a>Śira terigütü qoṉin takilḡatu</a>
+         <br><a>Śira toson
+            ideśitü</a>
+         </div>
+      
+      <div><br>§ 29
+         
+         <div><br>§ 29.i
+            <br><a>Boġda-yin Odqan Ḡalayiqan ekede</a>
+            <br><a>Öber-uruḡu čiṉu ögekün darasun dusqan saḡuṉam.</a>
+            </div>
+         
+         <div><br>§ 29.ii
+            <br><a>Ögedlekü metü törö-yin eǰen</a>
+            <br><a>Qaḡan qatun qamuġ ulus-dur<a><span id="inlineRdg">{ -iyan <i>G</i>, -y̌ian <i>L3</i>;  }</span></a>
+               </a>
+            <br><a>Engke 'i̱rḡalang-yi eyin ĵirḡan ĵay̌aḡan atuḡai</a>
+            </div>
+         </div>
+      
+      <div><br>§ 30
+         <br><a>Čing temür ečige-tü</a>
+         <br><a>Činggis čilaḡun
+            eketü</a>
+         <br><a>Čidamḡai modon olan amitu</a>
+         </div>
+      
+      <div><br>§ 31
+         <br><a>Qatan temür ečige-tü</a>
+         <br><a>Qayir čilaḡun eke-tü</a>
+         <br><a>Qayilasun modon olan
+            amitu</a>
+         </div>
+      
+      <div><br>§ 32
+         
+         <div><br>§ 32.i
+            <br><a>Boġda-yin Odqan Ḡalayiqan ekede öber-uruḡu
+               čiṉu</a>
+            <br><a>Ögekün darasun dusqan saḡunam.</a>
+            </div>
+         
+         <div><br>§ 32.ii
+            <br><a>Egüride y̌abuqu törö-yin eǰen</a>
+            <br><a>Qaḡan qatun qamuġ ulus-dur-y̌ian</a>
+            <br><a>Engke ĵirḡalang-yi
+               eyin ĵirġan ĵay̌aḡan atuḡai::</a>
+            </div>
+         </div>
+      
+      <div><br>§ 33
+         <br><a>Toḡ-a tomśi ügei y̌eke töröyi čiṉu törölen saḡunam.</a>
+         <br><a>Tomi ügei ekitü
+            taki̱l-i činu tomilan saḡunam..</a>
+         <br><a>Torḡ-a altatu-yin činu
+            emüsgen saḡunam..</a>
+         </div>
+      
+      <div><br>§ 34
+         <br><a>Egüride y̌abuqu eng ügei taki̱l-i čiṉu
+            ekilen saḡunam.. </a>
+         <br><a>Ekitü ĵaqatu-yin čiṉu
+            emüsgen saḡunam..</a>
+         </div>
+      
+      <div><br>§ 35
+         <br><a>Egüride y̌abuqu sayin törö-yin </a>
+         <br><a>Eǰen qaḡan qatun qamuġ ulus-dur-y̌ian</a>
+         <br><a>Engke ĵirḡalang-yi
+            <a><span id="inlineRdg">{ -iyan <i>G</i>, eyin <i>L3</i>;  }</span></a> ĵirqan ĵay̌aḡan atuḡai::</a>
+         </div>
+      
+      <div><br>§ 36
+         <br><a>Altan ordo-yin
+            ḡolomtan-u y̌eke öčig tegüsbe::..::</a>
+         </div>
+      
+      
+      In the Altan Bičig texts from Ejen Qoro-a, the previous prayer is immediately
+      followed by this shorter but generally similar prayer.
+      
+      
+      
+      
+      <div><br>§ 37
+         <br><a><a><span id="inlineRdg">{ Degere <i>L3 G</i>, Deger-e <i>S</i>;  }</span></a> tngri <a>nebte<input type="checkbox" id="fref174"><label for="fref174"><sup></sup></label><span id="FN"><br><br>nebte ] <i>S</i>;
+                  ṉebte <i>L3 G</i>; <br><br></span></a> čoġ-tu</a>
+         <br><a>Door-a Etügen eke <a>nebte<input type="checkbox" id="fref175"><label for="fref175"><sup></sup></label><span id="FN"><br><br>nebte ] <i>S</i>;
+                  ṉebte <i>L3 G</i>; <br><br></span></a>
+             ilčitü</a>
+         </div>
+      
+      <div><br>§ 38
+         <br><a>Qatan temür ečige-tü</a>
+         <br><a>Qayilasun ebesün <a>umayitu<input type="checkbox" id="fref176"><label for="fref176"><sup></sup></label><span id="FN"><br><br>umayitu ] <i>S</i>;
+                  uma'itu <i>L3 G</i>; <br><br></span></a>
+            </a>
+         </div>
+      
+      <div><br>§ 39
+         
+         <div><br>§ 39.i
+            <br><a>Boġda-yin Odqan ġolomta-du ögekün tosun
+               talbinam..</a>
+            </div>
+         
+         <div><br>§ 39.ii
+            <br><a>Ögödlekü <a>sayin<input type="checkbox" id="fref177"><label for="fref177"><sup></sup></label><span id="FN"><br><br>sayin ] <i>L3 S</i>;
+                     sa'in <i>G</i>; <br><br></span></a> törö-yin eǰen</a>
+            <br><a>Qaḡan qatun
+               qamuġ <a>ulus-dur-iyan<input type="checkbox" id="fref178"><label for="fref178"><sup></sup></label><span id="FN"><br><br>ulus-dur-iyan ] <i>G S</i>;
+                     ulus-dur-'y̌an <i>L3</i>; <br><br></span></a></a>
+            <br><a>Engke ĵirḡalang<a><span id="inlineRdg">{ -i <i>S</i>, -yi <i>L3 G</i>;  }</span></a>
+               <a>eyin<input type="checkbox" id="fref179"><label for="fref179"><sup></sup></label><span id="FN"><br><br>eyin ] <i>L3</i>;
+                     -iyan <i>G</i>, <i>om.</i> <i>S</i>; <br><br></span></a>
+               ĵirġan
+               ĵayaġan
+               atuġai::</a>
+            </div>
+         </div>
+      
+      <div><br>§ 40
+         <br><a>Sečen temür ečige-tü</a>
+         <br><a>Čenggen mören
+            eke-tü..</a>
+         <br><a>Śira <a>kilġana<input type="checkbox" id="fref180"><label for="fref180"><sup></sup></label><span id="FN"><br><br>kilġana<i> emen. </i> ] kilqaṉa, 
+                  <i> sic. </i><i>L3 G</i>;
+                  kilaqan <i>S</i>; <br><br></span></a>
+            <input type="checkbox" id="fref181"><label for="fref181"><sup></sup></label><span id="FN"><br><br>kilaqan? both QL3 and QK are ambiguous on
+               this<br><br></span> amitu..</a>
+         <br><a><a><span id="inlineRdg">{ Śiraqalčiṉan <i>L3 G</i>, Śiraḡalǰiṉan <i>S</i>;  }</span></a>
+             ebesün <a>umayitu<input type="checkbox" id="fref182"><label for="fref182"><sup></sup></label><span id="FN"><br><br>umayitu ] <i>S</i>;
+                  umaitu <i>G</i>, umiitu <i>L3</i>; <br><br></span></a>..</a>
+         </div>
+      
+      <div><br>§ 41
+         
+         <div><br>§ 41.i
+            <br><a>Boġda-yin örgen ġolomtan-du</a>
+            <br><a>Ögekün toson <a>talbinam<input type="checkbox" id="fref183"><label for="fref183"><sup></sup></label><span id="FN"><br><br>talbinam ] <i>L3 G</i>;
+                     talbiṉam <i>S</i>; <br><br></span></a> ..</a>
+            </div>
+         
+         <div><br>§ 41.ii
+            <br><a>Ögödölekü <a>sayin<input type="checkbox" id="fref184"><label for="fref184"><sup></sup></label><span id="FN"><br><br>sayin ] <i>L3 S</i>;
+                     sa'in <i>G</i>; <br><br></span></a> törö-yin eĵen </a>
+            <br><a>Qaġan Qatun qamuġ ulus-<a><span id="inlineRdg">{ dur <i>L3 G</i>, tur <i>S</i>;  }</span></a>
+               <a>-iyan<input type="checkbox" id="fref185"><label for="fref185"><sup></sup></label><span id="FN"><br><br>-iyan ] <i>S</i>;
+                     -'y̌an <i>L3 G</i>; <br><br></span></a>
+               </a>
+            <br><a>Engke <a>ĵirgalang-i<input type="checkbox" id="fref186"><label for="fref186"><sup></sup></label><span id="FN"><br><br>ĵirgalang -i<i> emen. </i> ] ĵirḡalang, 
+                     <i> sic. </i><i>G S</i>;
+                     ĵirḡalang-yi <i>L3</i>; <br><br></span></a>
+               <a><span id="inlineRdg">{ eyin <i>G S</i>, e'in <i>L3</i>;  }</span></a>
+               ĵirḡan
+               ĵay̌aḡan
+               atuḡai::</a>
+            </div>
+         </div>
+      
+      <div><br>§ 42
+         
+         <div><br>§ 42.i
+            <br><a>Uḡuraġ
+               undai
+               čiṉu dusqan talbiṉam..</a>
+            </div>
+         
+         <div><br>§ 42.ii
+            <br><a>Uruġśida yabuqu <a>sayin<input type="checkbox" id="fref187"><label for="fref187"><sup></sup></label><span id="FN"><br><br>sayin ] <i>L3 S</i>;
+                     sa'in <i>G</i>; <br><br></span></a><input type="checkbox" id="fref188"><label for="fref188"><sup></sup></label><span id="FN"><br><br>L3: This is not clearly
+                  written<br><br></span>
+               <a>törö-yin<input type="checkbox" id="fref189"><label for="fref189"><sup></sup></label><span id="FN"><br><br>törö-yin ] <i>L3 S</i>;
+                     törö-'in <i>G</i>; <br><br></span></a></a> eǰen
+            <br><a>Qaġan Qatun qamuġ <a>ulus-dur-iyan<input type="checkbox" id="fref190"><label for="fref190"><sup></sup></label><span id="FN"><br><br>ulus-dur-iyan ] <i>G S</i>;
+                     ulus-dur-'y̌an <i>L3</i>; <br><br></span></a></a>
+            <br><a>Engke
+               <a><span id="inlineRdg">{ ĵirḡ-a lang-yi <i>L3 G</i>, ĵirḡalang-i <i>S</i>;  }</span></a>
+               <a>eyin<input type="checkbox" id="fref191"><label for="fref191"><sup></sup></label><span id="FN"><br><br>eyin ] <i>S</i>;
+                     -'yan <i>G</i>, e'in <i>L3</i>; <br><br></span></a>
+               <a>ĵirġan<input type="checkbox" id="fref192"><label for="fref192"><sup></sup></label><span id="FN"><br><br>ĵirġan<i> emen. </i> ] ĵirḡan, 
+                     <i> sic. </i><i>L3 S</i>;
+                     ĵirḡal <i>G</i>; <br><br></span></a>
+               ĵayaġan
+               atuġai::</a>
+            </div>
+         </div>
+      
+      <div><br>§ 43
+         
+         <div><br>§ 43.i
+            <br><a>Araǰa śitam-i čiṉu dusqan talbiṉam</a>
+            </div>
+         
+         <div><br>§ 43.ii
+            <br>Arbin <a>sayin<input type="checkbox" id="fref193"><label for="fref193"><sup></sup></label><span id="FN"><br><br>sayin ] <i>S</i>;
+                  sa'in <i>G</i>, ayin <i>L3</i>; <br><br></span></a>
+            <a>törö-yin<input type="checkbox" id="fref194"><label for="fref194"><sup></sup></label><span id="FN"><br><br>törö-yin ] <i>L3 S</i>;
+                  törö-'in <i>G</i>; <br><br></span></a> eǰen 
+            <br> Qatun qamuġ <a>ulus-dur-iyan<input type="checkbox" id="fref195"><label for="fref195"><sup></sup></label><span id="FN"><br><br>ulus-dur-iyan ] <i>S</i>;
+                  ulus-dur-i'an <i>G</i>, ulus-dur-'y̌an <i>L3</i>; <br><br></span></a>
+            <br>Engke <a>ĵirġalang-i<input type="checkbox" id="fref196"><label for="fref196"><sup></sup></label><span id="FN"><br><br>ĵirġalang -i<i> emen. </i> ] ĵirḡalang, 
+                  <i> sic. </i><i>S</i>;
+                  ĵirḡalang-yi <i>L3 G</i>; <br><br></span></a>
+            <a>eyin<input type="checkbox" id="fref197"><label for="fref197"><sup></sup></label><span id="FN"><br><br>eyin ] <i>L3 S</i>;
+                  -'ian <i>G</i>; <br><br></span></a>
+            
+            
+             ::
+            </div>
+         </div>
+      
+      <div><br>§ 44
+         
+         <div><br>§ 44.i
+            <br><a><a><span id="inlineRdg">{ Toson <i>L3 G</i>, Toso <i>S</i>;  }</span></a> ögekün-i činu dusqan talbinam..</a>
+            </div>
+         
+         <div><br>§ 44.ii
+            <br><a>Toġ-a<input type="checkbox" id="fref198"><label for="fref198"><sup></sup></label><span id="FN"><br><br>toġ-a ] <i>L3 S</i>;
+                  Toḡ-a <i>G</i>; <br><br></span></a> tomśi ügei
+            <a>ĵirġalang-i<input type="checkbox" id="fref199"><label for="fref199"><sup></sup></label><span id="FN"><br><br>ĵirġalang -i<i> emen. </i> ] ĵirḡalang, 
+                  <i> sic. </i><i>S</i>;
+                  ĵirḡalang-yi <i>L3 G</i>; <br><br></span></a>
+            
+            <br> Qatun qamuġ <a>ulus-dur-iyan<input type="checkbox" id="fref200"><label for="fref200"><sup></sup></label><span id="FN"><br><br>ulus-dur- iyan<i> emen. </i> ] 'y̌an, 
+                  <i> sic. </i><i>L3 S</i>;
+                  ulus-du-iyan <i>G</i>; <br><br></span></a>
+            <br>Engke <a>ĵirġalang-i<input type="checkbox" id="fref201"><label for="fref201"><sup></sup></label><span id="FN"><br><br>ĵirġalang -i<i> emen. </i> ] ĵirḡalang, 
+                  <i> sic. </i><i>S</i>;
+                  ĵirḡalang-yi <i>G</i>, ĵirḡalang  <i>L3</i>; <br><br></span></a><a>eyin<input type="checkbox" id="fref202"><label for="fref202"><sup></sup></label><span id="FN"><br><br>eyin ] <i>S L3</i>;
+                  -iyan <i>G</i>; <br><br></span></a>
+            
+            
+            
+            </div>
+         </div>
+      
+      <div><br>§ 45
+         <br><a><a>Altan<input type="checkbox" id="fref203"><label for="fref203"><sup></sup></label><span id="FN"><br><br>altan ] <i>L3</i>;
+                  <i>om.</i> <i>G</i>; <br><br></span></a> ordo-yin ḡolomtan-u <a>baġ-a<input type="checkbox" id="fref204"><label for="fref204"><sup></sup></label><span id="FN"><br><br>baġ-a ] <i>L3</i>;
+                  ber-e <i>G</i>; <br><br></span></a><input type="checkbox" id="fref205"><label for="fref205"><sup></sup></label><span id="FN"><br><br>: The word 'ber-e' here is interesting, as this
+               prayer seems to have been adapted for the Eśi Qatun shrine
+               materials as well.<br><br></span> öčig tegüsbe::..::<input type="checkbox" id="fref206"><label for="fref206"><sup></sup></label><span id="FN"><br><br>altan 
+               ... 
+               
+               öčig tegüsbe ] <i>L3 G</i>;
+               <i>om.</i> <i>S</i>; <br><br></span></a>
+         
+         </div>
+      
+      
+      </body>
+   </html>
